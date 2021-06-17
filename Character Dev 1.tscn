@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://player_idleCropped.png" type="Texture" id=1]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 468, 1002 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Character Dev 1" type="Node2D"]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2( 217.982, 296.301 )
+scale = Vector2( 0.207666, 0.207666 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="RigidBody2D"]
+scale = Vector2( 1, 1 )
+frames = SubResource( 2 )
