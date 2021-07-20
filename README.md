@@ -1,4 +1,4 @@
-# CoolPlatformer
+# Project Marcus
 
 Our repository for our, at the moment, currently unnamed 2D platformer in the Godot engine. Feel free to submit any request or problems in issues.
 
